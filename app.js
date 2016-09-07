@@ -7,5 +7,7 @@ $(document).ready(function(){
             e.preventDefault();
 
             $(this).text('Liked!')
+                   .closest('.news-item')
+                   .addClass('is-liked');
         });
 });
